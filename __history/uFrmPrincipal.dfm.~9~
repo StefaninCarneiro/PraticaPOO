@@ -1,0 +1,127 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Cadastro Cliente'
+  ClientHeight = 334
+  ClientWidth = 672
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 32
+    Top = 43
+    Width = 34
+    Height = 13
+    Caption = 'Nome: '
+  end
+  object Label2: TLabel
+    Left = 333
+    Top = 43
+    Width = 85
+    Height = 13
+    Caption = 'Data Nascimento:'
+  end
+  object Label3: TLabel
+    Left = 32
+    Top = 99
+    Width = 36
+    Height = 13
+    Caption = 'Sal'#225'rio:'
+  end
+  object Label4: TLabel
+    Left = 395
+    Top = 99
+    Width = 23
+    Height = 13
+    Caption = 'CPF:'
+  end
+  object Label5: TLabel
+    Left = 356
+    Top = 155
+    Width = 62
+    Height = 13
+    Caption = 'Horas Extras'
+  end
+  object Label6: TLabel
+    Left = 32
+    Top = 152
+    Width = 29
+    Height = 13
+    Caption = 'Cargo'
+  end
+  object Label7: TLabel
+    Left = 423
+    Top = 200
+    Width = 59
+    Height = 13
+    Caption = 'Sal'#225'rio Total'
+  end
+  object BtnAcao: TButton
+    Left = 35
+    Top = 240
+    Width = 574
+    Height = 61
+    Caption = 'Cadastrar'
+    TabOrder = 0
+    OnClick = BtnAcaoClick
+  end
+  object EdtNome: TEdit
+    Left = 112
+    Top = 40
+    Width = 185
+    Height = 21
+    TabOrder = 1
+  end
+  object EdtDataNasc: TEdit
+    Left = 424
+    Top = 40
+    Width = 185
+    Height = 21
+    TabOrder = 2
+  end
+  object EdtSal: TEdit
+    Left = 112
+    Top = 96
+    Width = 185
+    Height = 21
+    TabOrder = 3
+  end
+  object EdtCpf: TEdit
+    Left = 424
+    Top = 96
+    Width = 185
+    Height = 21
+    TabOrder = 4
+  end
+  object EdtHoras: TEdit
+    Left = 424
+    Top = 152
+    Width = 185
+    Height = 21
+    TabOrder = 5
+  end
+  object CBoxCargo: TComboBox
+    Left = 112
+    Top = 149
+    Width = 185
+    Height = 21
+    TabOrder = 6
+    OnChange = CBoxCargoChange
+    Items.Strings = (
+      'Gestor'
+      'Vendedor')
+  end
+  object EdtTotal: TEdit
+    Left = 488
+    Top = 197
+    Width = 121
+    Height = 21
+    TabOrder = 7
+  end
+end
